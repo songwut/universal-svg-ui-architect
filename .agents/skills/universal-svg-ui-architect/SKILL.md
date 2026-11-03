@@ -143,33 +143,6 @@ Canonical example demonstrating complete layer hierarchy, inline attributes, and
         <circle id="Indicator / Status-Dot" cx="10" cy="12" r="3.5" fill="#38BDF8"/>
         <text id="Typography / Badge-Label" x="20" y="15" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">IN PROGRESS</text>
       </g>
-      
-      <!-- Timestamp / Meta -->
-      <text id="Typography / Meta-Time" x="312" y="16" text-anchor="end" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400">2h ago</text>
-    </g>
-    
-    <!-- Body Content -->
-    <g id="Card__Body" transform="translate(24, 68)">
-      <text id="Typography / Heading-SM" x="0" y="18" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600">Export Vector Pipeline</text>
-      <text id="Typography / Body-Secondary" x="0" y="42" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400">Standardize SVG layer naming for cross-tool parity.</text>
-    </g>
-    
-    <!-- Card Footer / Actions -->
-    <g id="Card__Footer" transform="translate(24, 136)">
-      <!-- Divider -->
-      <line id="Divider / Horizontal" x1="0" y1="0" x2="312" y2="0" stroke="#334155" stroke-width="1"/>
-      
-      <!-- Primary Action Button -->
-      <g id="Button / Primary--Default" transform="translate(216, 16)">
-        <rect id="Button__Background" x="0" y="0" width="96" height="32" rx="8" fill="#38BDF8"/>
-        <text id="Typography / Button-Label" x="48" y="20" text-anchor="middle" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Review</text>
-      </g>
-      
-      <!-- Assignee Indicator -->
-      <g id="Avatar / User" transform="translate(0, 16)">
-        <circle id="Avatar__Background" cx="16" cy="16" r="16" fill="#334155"/>
-        <text id="Typography / Avatar-Initials" x="16" y="20" text-anchor="middle" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">UA</text>
-      </g>
     </g>
   </g>
 </svg>
