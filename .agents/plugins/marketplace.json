@@ -1,0 +1,29 @@
+{
+  "name": "universal-svg-ui-architect",
+  "interface": {
+    "displayName": "Universal SVG UI Architect"
+  },
+  "metadata": {
+    "description": "Generates clean, standards-compliant, standalone SVG UI components compatible with Figma, Penpot, Canva, and code frameworks, using semantic layer naming and adaptive design tokens.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "universal-svg-ui-architect",
+      "description": "Generates clean, standards-compliant, standalone SVG UI components compatible with Figma, Penpot, Canva, and code frameworks, using semantic layer naming and adaptive design tokens.",
+      "version": "1.0.0",
+      "source": {
+        "source": "local",
+        "path": "./skills/universal-svg-ui-architect"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Design & UI",
+      "skills": [
+        "./skills/universal-svg-ui-architect"
+      ]
+    }
+  ]
+}
