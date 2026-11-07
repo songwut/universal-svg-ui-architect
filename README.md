@@ -16,24 +16,69 @@ Agent skill and prompt system for generating paste-ready, standards-compliant SV
 - **Adaptive Design Context:** Automatically consumes a custom `DESIGN.md` when uploaded in the workspace, or dynamically synthesizes a domain-specific token palette with an inline notification header.
 
 ---
+## Installation
 
-## Quick Start
+### Method 1. Local LLMs (Ollama, LM Studio, Rapid-MLX)
+Copy the content of `SKILL.md` directly into your runner's **System Prompt** configuration.
 
-### 1. AI Coding Agents (Claude Code, Antigravity, Cursor)
-Reference via `.agents/plugins/marketplace.json` or copy the skill folder into your workspace:
+---
+
+### Method 2: Using Skills CLI (Recommended)
+Install automatically across supported agent environments with a single command:
+```bash
+npx -y skills add https://github.com/songwut/universal-svg-ui-architect
+
+```
+---
+
+### Method 3: One-Line Terminal Command (Direct Install)
+Download and place `SKILL.md` directly into the universal agent workspace:
+```bash
+mkdir -p .agents/skills/universal-svg-ui-architect && curl -fsSL https://raw.githubusercontent.com/songwut/universal-svg-ui-architect/main/skills/universal-svg-ui-architect/SKILL.md -o .agents/skills/universal-svg-ui-architect/SKILL.md
+
+```
+> **Target Directory Configuration:**
+> The command above targets the universal agent standard (`.agents/skills/`). If your coding agent uses a dedicated folder structure, replace `.agents` with your agent's respective configuration path:
+> 
+> * **Claude Code:** `.claude/skills/universal-svg-ui-architect/`
+> * **Cursor:** `.cursor/skills/universal-svg-ui-architect/`
+> * **Zed:** `.zed/skills/universal-svg-ui-architect/`
+> * **Cline / Roo Code / OpenCode / Windsurf:** `.agents/skills/universal-svg-ui-architect/`
+---
+
+
+### Diverse Prompt Examples 
+
+#### 1. Data Analytics & Telemetry Widget
+> *"Create a compact SVG analytics widget for server telemetry showing CPU/Memory load, an inline sparkline trend line, min/max metadata, and a healthy status indicator badge aligned to an 8pt grid."*
+- **Best for:** Dashboards, monitoring systems, operational status widgets.
+
+#### 2. Marketing & Bento-Grid Feature Card
+> *"Generate a bento-grid feature card in SVG format highlighting 'End-to-End Encryption', featuring an abstract geometric vector lock mark, high-contrast headline, feature description, and an outlined action button."*
+- **Best for:** Landing page bento layouts, product overview banners, pitch deck graphics.
+
+#### 3. Cloud Architecture & Technical Diagram Node
+> *"Design a modular SVG architecture diagram node representing an 'API Gateway & Ingress Router', complete with TLS termination tags, connection port endpoints, and scoped semantic token classes."*
+- **Best for:** System topology diagrams, Kubernetes cluster workflows, cloud infrastructure docs.
+
+> **Prompt Example:** *"Short Prompt"*
+#### 4. Circular Progress Gauge (Dashboard / Infographic)
+> *"Create an SVG circular gauge showing 75% capacity with centered percentage text and semantic status tokens."*
+
+#### 5. Promo Tag Badge (E-Commerce / Marketing)
+> *"Generate an SVG promo tag badge reading '50% OFF' with an accent star icon and rounded pill container."*
+
+---
+
+### Structure
 ```text
-your-project/
-├── DESIGN.md                         # (Optional) Custom design tokens
-├── .agents/plugins/marketplace.json  # Points to ./skills/universal-svg-ui-architect
+project/
+├── DESIGN.md # (Optional) Custom design tokens
+├── .agents/plugins/marketplace.json
 └── skills/
     └── universal-svg-ui-architect/
         └── SKILL.md
 ```
-> **Prompt Example:** *"Create a dark-mode SaaS deployment status card in SVG format."*
-
-### 2. Local LLMs (Ollama, LM Studio, Rapid-MLX)
-Copy the content of `SKILL.md` directly into your runner's **System Prompt** configuration.
-
 ---
 
 ## Dual-Layer Semantic Standard
